@@ -1,7 +1,5 @@
 package com.bgcpartners.exercise
 
-import java.io.File
-
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
 

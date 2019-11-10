@@ -28,6 +28,6 @@ object MainApp extends App {
 
   val movieDataAnalyzer = new MovieDataAnalyzer(spark)
   val movieDataExtracted = movieDataAnalyzer.extract(input.result())
-  //val movieDataTransformed = movieDataAnalyzer.transform(movieDataExtracted)
-  //movieDataAnalyzer.load(movieDataTransformed, resultsOutputPath)
+  val movieDataTransformed = movieDataAnalyzer.transform(movieDataExtracted)
+  movieDataAnalyzer.load(movieDataTransformed, resultsOutputPath)
 }
